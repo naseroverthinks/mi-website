@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO meta description -->
+    <meta name="description" content="Nova Wear is a modern one-page online clothing store offering stylish, comfortable, and affordable fashion.">
+
+    <title>Nova Wear</title>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+
+    <!-- Header and navigation -->
+    <header>
+        <h1>Nova Wear</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Shop</a>
+            <a href="#about">About</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Section 1: Hero -->
+    <section id="home" class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="video/store.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-content">
+            <h2>Style Made Simple</h2>
+            <p>Everyday clothing designed for comfort, confidence, and modern life.</p>
+
+            <!-- HTML5 interactive element: progress -->
+            <div class="hero-progress">
+                <p>Customer satisfaction level</p>
+                <progress value="90" max="100"></progress>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Products -->
+    <section id="products">
+        <h2>Our Collection</h2>
+
+        <div class="products">
+            <article class="card">
+                <img src="images/shirt.jpg" alt="Essential T-Shirt in a simple modern style">
+                <h3>Essential T-Shirt</h3>
+                <p>
+                    Soft cotton fabric designed for daily wear. Breathable, lightweight, and comfortable for long hours. A simple wardrobe essential that works with any casual outfit.
+                </p>
+                <span>$12</span>
+            </article>
+
+            <article class="card">
+                <img src="images/hoodie.jpg" alt="Street Hoodie with a relaxed modern design">
+                <h3>Street Hoodie</h3>
+                <p>
+                    Warm hoodie made for comfort and style. Perfect for cooler days, casual outings, and relaxed streetwear looks with a clean modern fit.
+                </p>
+                <span>$25</span>
+            </article>
+
+            <article class="card">
+                <img src="images/jacket.jpg" alt="Urban Jacket with a smart modern appearance">
+                <h3>Urban Jacket</h3>
+                <p>
+                    Modern jacket with a durable design and clean finish. Built to balance everyday practicality with a sharper urban fashion look.
+                </p>
+                <span>$40</span>
+            </article>
+        </div>
+
+        <!-- HTML5 interactive element: details -->
+        <details>
+            <summary>More Product Details</summary>
+            <p>
+                All products are available in multiple sizes ranging from small to extra large. Orders are processed within 24 hours and usually delivered within 3–5 working days.
+            </p>
+        </details>
+
+        <!-- HTML5 interactive element: figure -->
+        <figure class="review-figure">
+            <img src="images/customer.jpg" alt="Happy customer wearing Nova Wear clothing">
+            <figcaption>
+                Customer feedback: “Nova Wear delivered exactly what I expected. The clothing felt comfortable, the design looked modern and clean, and the delivery was fast and reliable. The whole shopping experience was smooth, simple, and enjoyable from start to finish.”
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Section 3: About -->
+    <section id="about" class="center-section">
+        <h2>About Us</h2>
+
+        <div class="center-text">
+            <p>
+                Nova Wear is a modern online clothing store created to provide simple, stylish, and comfortable fashion for everyday life. Our identity is built around minimal design, clean aesthetics, and practical clothing that fits naturally into different lifestyles.
+            </p>
+
+            <p>
+                We believe fashion should not feel complicated. Instead, it should help people feel confident while staying comfortable and expressive. Our collections are inspired by urban trends and everyday needs, making each piece easy to wear and easy to style.
+            </p>
+
+            <p>
+                At Nova Wear, we focus on delivering a smooth and reliable shopping experience from start to finish. From browsing products to receiving orders, every step is designed to be fast, simple, and user-friendly.
+            </p>
+        </div>
+
+        <!-- Column layout -->
+        <div class="about-columns">
+            <p>
+                Nova Wear focuses on quality materials, clean presentation, and a modern digital shopping experience. The aim is to combine style, comfort, and affordability in one place.
+            </p>
+            <p>
+                The website uses a dark modern theme, clear navigation, and interactive content to create a visually appealing and easy-to-use experience for customers.
+            </p>
+        </div>
+
+        <!-- Multimedia video -->
+        <div class="video-container">
+            <video controls>
+                <source src="video/store.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Multimedia audio -->
+        <audio controls>
+            <source src="audio/music.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <!-- Section 4: Quiz -->
+    <section id="quiz">
+        <div class="section-box">
+            <h2>Customer Quiz</h2>
+            <p class="section-intro">
+                Test your knowledge of Nova Wear and see how well you know our store, products, and delivery service.
+            </p>
+
+            <div class="quiz-box">
+                <div class="quiz-question">
+                    <p>1. What does Nova Wear sell?</p>
+                    <div class="quiz-options">
+                        <button onclick="answer(1,true,this)">Clothing</button>
+                        <button onclick="answer(1,false,this)">Furniture</button>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>2. What is the main focus of Nova Wear?</p>
+                    <div class="quiz-options">
+                        <button onclick="answer(2,true,this)">Comfort &amp; Style</button>
+                        <button onclick="answer(2,false,this)">Luxury Only</button>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>3. How long does delivery usually take?</p>
+                    <div class="quiz-options">
+                        <button onclick="answer(3,true,this)">3–5 days</button>
+                        <button onclick="answer(3,false,this)">30 days</button>
+                    </div>
+                </div>
+
+                <button class="main-btn" onclick="showScore()">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section id="contact">
+        <div class="section-box contact-box">
+            <div class="contact-text">
+                <h2>Contact Us</h2>
+                <p class="section-intro">
+                    Have a question about our products, your order, or delivery information? Send us a message and our team will get back to you as soon as possible.
+                </p>
+            </div>
+
+            <form id="form">
+                <!-- Accessible form field -->
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name">
+                <span id="nameError"></span>
+
+                <!-- Accessible form field -->
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Your Email">
+                <span id="emailError"></span>
+
+                <!-- Accessible form field -->
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Write your message here..."></textarea>
+                <span id="messageError"></span>
+
+                <button class="main-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Nova Wear</p>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="topBtn" onclick="scrollTopPage()">↑</button>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
